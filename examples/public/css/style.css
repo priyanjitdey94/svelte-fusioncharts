@@ -397,3 +397,17 @@ iframe.export-charts {
 .card-body {
   padding: 0px;
 }
+
+.btn-none, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.btn-none:active, .none:focus {
+  outline: none;
+}
