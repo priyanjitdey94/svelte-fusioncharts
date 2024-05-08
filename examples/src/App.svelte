@@ -11,7 +11,7 @@
 <div id="app">
   <div>
     <Header />
-    <div className="page-container">
+    <div class="page-container">
       <div id="mainContainer" class="main-container">
         <Banner />
         <Feature />

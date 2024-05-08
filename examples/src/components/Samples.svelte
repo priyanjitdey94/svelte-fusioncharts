@@ -108,17 +108,20 @@
     <!-- Chart selection for mobile devices - start -->
     <div class="row">
       <div class="col-12 d-flex justify-content-center d-md-none">
-        <div id="mobileChart-selector" class="base-dropdown chart-selector" on:click={() => { toggleModal('show'); }}>
+        <button class="btn-none" on:click={() => { toggleModal('show'); }}>
+        <div id="mobileChart-selector" class="base-dropdown chart-selector">
           <div class="selector" bind:this={modalSelector} >A Simple Chart</div>
           <div class="placeholder">Quick Demo:</div>
           <div class="caret">
             <i class="fc_dropdown"></i>
           </div>
         </div>
+        </button>
       </div>
     </div>
     <!-- Modal for selection (Only for Mobile Devices) -->
-    <div id="myModal" class="modal hidden" bind:this={modal} on:click={() => { toggleModal('hide'); }} >
+    <button class="btn-none" on:click={() => { toggleModal('hide'); }}>
+    <div id="myModal" class="modal hidden" bind:this={modal}>
 
       <!-- Modal content -->
       <div class="modal-content">
@@ -139,6 +142,7 @@
         </div>
       </div>
     </div>
+    </button>
     <!-- Chart selection for mobile devices - end -->
 
     <div class="row">
