@@ -10,7 +10,8 @@
     idUpdateHandler = () => {};
 </script>
 
-<div data-id={dataId} class={(cssClass + (selected ? ' selected' : ''))} on:click={() => { idUpdateHandler(dataId); }}>
+<button class="btn-none" on:click={() => { idUpdateHandler(dataId); }}>
+<div data-id={dataId} class={(cssClass + (selected ? ' selected' : ''))}>
   {#if view === 'mobile'}
     <div class='p'>{title}</div>
   {:else}
@@ -26,3 +27,4 @@
     {/if}
   {/if}
 </div>
+</button>

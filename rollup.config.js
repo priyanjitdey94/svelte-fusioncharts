@@ -1,6 +1,5 @@
 import svelte from 'rollup-plugin-svelte';
-import resolve from 'rollup-plugin-node-resolve';
-import pkg from './package.json';
+import pkg from './package.json' assert { type: "json" };
 
 const name = pkg.name
 	.replace(/^(@\S+\/)?(svelte-)?(\S+)/, '$3')
@@ -9,12 +8,12 @@ const name = pkg.name
 
 export default {
 	input: 'src/index.svelte',
+	external: ['svelte', 'svelte/internal', 'svelte/internal/disclose-version'],
 	output: [
 		{ file: pkg.module, 'format': 'es' },
 		{ file: pkg.main, 'format': 'umd', name }
 	],
 	plugins: [
-		svelte(),
-		resolve()
+		svelte()
 	]
 };
