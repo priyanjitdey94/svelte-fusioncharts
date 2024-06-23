@@ -23,7 +23,7 @@ A simple and lightweight official Svelte component for FusionCharts JavaScript c
   - [Working with events](#working-with-events)
 - [Quick Start](#quick-start)
 - [Going Beyond Charts](#going-beyond-charts)
-- [Usage and Integration of FusionTime](#usage-and-integration-of-fusionTime)
+- [Usage and Integration of FusionTime](#usage-and-integration-of-fusiontime)
 - [For Contributors](#for-contributors)
 - [Licensing](#licensing)
 
@@ -47,7 +47,6 @@ npm install --save svelte-fusioncharts
 See [npm documentation](https://docs.npmjs.com/) to know more about npm usage.
 
 ### Usage
-
 
 Import `svelte-fusioncharts` and FusionCharts in your app:
 
@@ -124,7 +123,7 @@ To render a map, import the FusionMaps module along with the map definition.
 
   // Always set FusionCharts as the first parameter
   fcRoot(FusionCharts, Maps, World, FusionTheme);
-  
+
   const dataSource = {
     chart: {
       caption: 'Average Annual Population Growth',
@@ -270,7 +269,7 @@ To call APIs we will need the chart object. To get the chart object for an Svelt
       width: '600',
       height: '400',
       renderAt: 'chart-container',
-      dataSource 
+      dataSource
     };
 
   const sliceDataPlot = (index, sliceOut = true) => {
@@ -381,7 +380,6 @@ Useful links for FusionTime
 - [How FusionTime works](https://www.fusioncharts.com/dev/fusiontime/getting-started/how-fusion-time-works)
 - [Create your first chart](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime)
 
-
 ## Going Beyond Charts
 
 - Explore 20+ pre-built business specific dashboards for different industries like energy and manufacturing to business functions like sales, marketing and operations [here](https://www.fusioncharts.com/explore/dashboards).
@@ -392,10 +390,10 @@ Useful links for FusionTime
 - Clone the repository and install dependencies
 
 ```
-$ git clone https://github.com/fusioncharts/svelte-fusioncharts.git
-$ cd svelte-fusioncharts
-$ npm i
-$ npm run dev
+git clone https://github.com/fusioncharts/svelte-fusioncharts.git
+cd svelte-fusioncharts
+npm i
+npm run dev
 ```
 
 - Run `npm run build` to create a production build.
